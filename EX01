@@ -1,0 +1,20 @@
+private void btn_calcular_Click(object sender, EventArgs e)
+{
+    double n1, n2, total = 0;
+    n1 = double.Parse(txt_preco.Text);
+    n2 = double.Parse(txt_parcelas.Text);
+    if (n2 <= 5 && n2 > 0) 
+    {
+        total = n1 / n2;
+        txt_total.Text = total.ToString();
+        txt_total.Text = "Valor_Valido";
+    }
+    else
+    {
+        txt_total.Text = "Valor_Invalido";
+
+    }
+
+    
+    
+}
